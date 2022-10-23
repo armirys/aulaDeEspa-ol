@@ -1,0 +1,134 @@
+/* ÈLÁNKY */
+table.articles
+{width: 1280px; border-spacing: 0;}
+
+table.articles td.boky
+{width: 40px; }
+
+table.articles td.titulek
+{width: 1200px; text-align: center; vertical-align: top; font-family: arial; font-size: 28px; font-weight: bold; color: black; background:url('../images/pozadi/bgs2.gif');
+border-left: 1px solid black; border-top: 1px solid black; border-right: 1px solid black;}
+
+/* buòka textu s okraji */
+table.articles td.clanek
+{width: 1200px; text-align: justify; vertical-align: top; font-family: arial; font-size: 15px; font-weight: normal; color: black; background:url('../images/pozadi/bgs2.gif');
+border-left: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black;}
+
+/* buòka textu s okraji z prava do leva*/
+table.articles td.clanek_zprava
+{width: 1200px; text-align: justify; vertical-align: top; font-family: arial; font-size: 17px; font-weight: normal; direction: rtl; color: black; background:url('../images/pozadi/bgs2.gif');
+border-left: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black;}
+
+/* buòka textu bez okrajù = celá šíøka = 1280px */
+table.articles td.picture
+{text-align: center; vertical-align: middle; font-family: arial; font-size: 15px; font-weight: normal; color: black; background:url('../images/pozadi/bgs2.gif');
+border-left: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black;}
+
+/* zdroj */
+table.articles td.clanek p, table.articles td.picture p
+{text-align: center; font-family: arial; font-size: 18px; font-style: italic; font-weight: normal; color: black;}
+
+/* zdroj zprava do leva */
+table.articles td.clanek_zprava p
+{text-align: center; font-family: arial; font-size: 20px; font-style: italic; direction:rtl;  font-weight: normal; color: black;}
+
+/* vložená tabulka s textem nebo obrázky */
+table.articles td.clanek table.vnitrek
+{width: 100%; text-align: justify; vertical-align: top; font-family: arial; font-size: 15px; font-weight: normal; color: black; }
+
+table.articles td.clanek table.vnitrek p
+{text-align: center; font-family: arial; font-size: 18px; font-style: italic; font-weight: normal; color: black;}
+
+/* obtejkaná tabulka s obrázkem uvnitø textu */
+table.pic td
+{text-align: center; vertical-align: top; font-family: arial; font-size: 13px; font-weight: normal; font-style: italic; color: black; }
+
+table.vnitrni
+{width: 100%; text-align: justify; vertical-align: top; font-family: arial; font-size: 15px; font-weight: normal; color: black;}
+
+table.vnitrni td
+{width: 50%; text-align: justify; vertical-align: top; font-family: arial; font-size: 15px; font-weight: normal; color: black;}
+
+
+
+/* LOGA */
+/* vnìjší tabulka*/
+table.loga
+{width: 1280px; border-spacing: 0;}
+
+table.loga td.boky
+{width: 40px; }
+
+table.loga td.stred
+{width: 1200px;}
+
+/* vnitøní tabulka */
+table.articles
+{width: 1280px; border-spacing: 0;}
+
+table.logotypy
+{width: 100%; }
+
+table.logotypy td.logotyp
+{text-align: center; vertical-align: middle; font-family: arial; font-size: 15px; font-weight: normal; color: black; background:url('../images/pozadi/bgs2.gif');
+border: 1px solid black; }
+
+table.logotypy td.mezera
+{width: 2%}
+
+
+
+
+
+/* MAPY ZOO */
+p.mapa_zoo
+{width: 1280px; text-align: center; vertical-align: top; font-family: arial; font-size: 18px; font-style: italic; font-weight: normal; color: black;}
+
+/* modrá angliètina */ 
+p.mapa_zoo span[lang="en-gb"]
+{color: #000053; }
+
+table.maptable
+{width: 1280px; border-spacing: 0; }
+
+table.maptable td.text
+{text-align: justify; vertical-align: top; font-family: arial; font-size: 14px; font-weight: normal; color: black;}
+
+table.maptable td.mezera
+{width: 20px;}
+
+table.maptable td.map
+{text-align: center; vertical-align: top;}
+
+
+
+/* VIDEA */
+table.other_videos
+{width: 1280px; border-spacing: 0; text-align: center; vertical-align: middle; font-family: arial; font-size: 15px; font-weight: normal; color: black;}
+
+/* velký video */
+table.video_v
+{width: 535px; vertical-align: top;}
+
+/* malý video */
+table.video_m
+{width: 383px; vertical-align: top;}
+
+table.video_v td.ikona_z02, table.video_m td.ikona_z02
+{width: 45px; height: 45px; text-align: center; vertical-align: middle; background:url('../images/pozadi/bgt.gif'); }
+
+table.video_v td.popis_videa, table.video_m td.popis_videa
+{height: 45px; text-align: left; vertical-align: middle; font-family: arial; font-size: 15px; font-weight: normal; color: black; background:url('../images/pozadi/bgt.gif');}
+
+table.video_v td.popis_videa
+{width: 490px; }
+
+table.video_m td.popis_videa
+{width: 338px; }
+
+table.video_v td.player, table.video_m td.player
+{height: 345px; text-align: center; vertical-align: top;  background:url('../images/pozadi/bgt.gif'); }
+
+table.video_v td.player {width: 535px; }
+
+table.video_m td.player {width: 383px;  }

@@ -1,0 +1,119 @@
+/* pozadí */
+body.wzd{ margin:0; padding:0; text-align:center; background: url('../../../menu/bg-wzd.gif');}
+body.zoo{ margin:0; padding:0; text-align:center; background: url('../../../menu/bgs.gif')}
+body.zoox{ margin:0; padding:0; text-align:center; background: url('../../../menu/bg-x.gif')}
+body.wzdx{ margin:0; padding:0; text-align:center; background: url('../../../menu/bg-wzd_x.gif')}
+body.m{ margin:0; padding:0; text-align:center; background: url('../../../menu/bg-m.gif')}
+body.h{ margin:0; padding:0; text-align:center; background: url('../../../menu/bg-h.gif')}
+body.ne{ margin:0; padding:0; text-align:center; background: url('../../../menu/bg-ne.gif')}
+body.na{ margin:0; padding:0; text-align:center; background: url('../../../menu/bg-na.gif')}
+body.nax{ margin:0; padding:0; text-align:center; background: url('../../../menu/bg-nax.gif')}
+body.p{ margin:0; padding:0; text-align:center; background: url('../../../menu/bg-p.gif')}
+body.other{ margin:0; padding:0; text-align:center; background: url('../../../menu/bgs.gif')}
+#wrapper {position: static; margin:0 auto; padding:0 ; width:1280px; text-align:left;}
+
+
+
+/* buttony */ 
+input.back
+{background: url('../images/ikony/back.gif'); 
+bacground-repeat: no-repeat;
+width: 35px;
+height: 35px;
+border-style: none;
+cursor: pointer;}
+input.back:hover {background: url('../images/ikony/back2.gif');
+bacground-repeat: no-repeat;
+width: 35px;
+height: 35px;
+border-style: none;
+cursor: pointer;}
+
+
+/* èervené jazyky krom AJ */ 
+span[lang]
+{color: #800000; }
+
+/* modrá angliètina */ 
+span[lang="en-gb"]
+{color: #000053; }
+
+
+/* tabulka název zemì a vlajka */
+table.nadpis {width: 1280px; border-spacing: 0;}
+
+/* nadpis - obrázek (+ text) */
+table.nadpis td.titul
+{width: 1160px; border-bottom: 3px solid #999999; 
+text-align: center; font-family: arial; font-size: 15px; font-weight: normal; color:#404000; 
+background:url('../images/pozadi/bg-titul.gif'); }
+
+/* nadpis bez vlajky */
+table.nadpis td.titul2
+{width: 1280px; border-bottom: 3px solid #999999; 
+text-align: center; font-family: arial; font-size: 20px; font-weight: bold; color:#404000; 
+background:url('../images/pozadi/bg-titul.gif'); }
+
+/* nadpis na home */ 
+table.nadpis td.titul_h
+{width: 1080px; border-bottom: 3px solid #999999;
+text-align: center; font-family: arial; font-size: 15px; font-weight: normal; color:#404000;
+background:url('../images/pozadi/bg-titul.gif'); }
+
+/* vlajka */
+table.nadpis td.vlajka
+{width: 120px; border-bottom: 3px solid #999999; 
+text-align: center; 
+background:url('../images/pozadi/bg-titul.gif'); }
+
+/* rss na home */
+table.nadpis td.vlajka_h
+{width: 100px; border-bottom: 3px solid #999999; 
+text-align: center; 
+background:url('../images/pozadi/bg-titul.gif'); }
+
+
+
+/* tabulka s nadpisem na stránkách souborù zoo */
+table.titul_files {width: 1280px; border-spacing: 0;}
+
+table.titul_files td.zoo
+{width: 1280px; font-family: Arial; font-weight:bold; font-size: 40px; vertical-align: middle; color:#404000; text-align: center; text-shadow: 1px 1px 5px rgba(0,0,0,0.5), -2px 0 white, 2px 0 white, 0 2px white, 0 -2px white, 2px 2px white, -2px -2px white, -2px 2px white, 2px -2px white; background:url('../images/pozadi/bgt.gif'); }
+
+table.titul_files td.nadpisy
+{width: 1280px; font-family: Arial; font-weight:bold; font-size: 40px; vertical-align: middle; color:#404000; text-align: center; text-shadow: 1px 1px 5px rgba(0,0,0,0.5), -2px 0 white, 2px 0 white, 0 2px white, 0 -2px white, 2px 2px white, -2px -2px white, -2px 2px white, 2px -2px white; background:url('../images/pozadi/bgt.gif'); }
+
+/* ikona tmavá */
+table td.ikona_bt
+{width: 40px; text-align: center; vertical-align: top; background:url('../images/pozadi/bgt.gif'); }
+
+/* ikona tmavá na støed */ table td.ikona_btm
+{width: 40px; text-align: center; vertical-align: middle; background:url('../images/pozadi/bgt.gif'); }
+
+
+
+
+/* tabulka na stránkách pravidel */
+table.rules {width: 1280px; border-spacing: 0;}
+
+table.rules td.nadpis
+{font-family: Arial; font-weight:bold; font-size: 40px; vertical-align: middle; color:#404000; text-align: center; text-shadow: 1px 1px 5px rgba(0,0,0,0.5), -2px 0 white, 2px 0 white, 0 2px white, 0 -2px white, 2px 2px white, -2px -2px white, -2px 2px white, 2px -2px white; background:url('../images/pozadi/bgt.gif'); }
+
+
+
+
+/* patièková tabulka */
+table.datum
+{width: 1280px; background:url('../images/pozadi/bgs2.gif'); border-spacing: 0;}
+
+table.datum td.text_stranka
+{width: 217px; text-align: left; vertical-align: middle; font-family: arial; font-size: 15px; font-weight: normal; }
+
+table.datum td.vytvoreno
+{width: 666px; text-align: left; vertical-align: middle; font-family: arial; font-size: 15px; font-weight: normal; }
+
+table.datum td.upraveno
+{width: 130px; text-align: center; vertical-align: middle; font-family: arial; font-size: 15px; font-weight: normal; }
+
+table.datum td.konce
+{width: 25px; }

@@ -1,0 +1,73 @@
+#hlavni_menu {height:30px; position:relative; z-index:100; text-align:center;}
+#hlavni_menu .konec {float:left}
+
+/* The menu styling */
+/* Remove the padding, margins and bullets from the lists */
+.menu, .menu ul {list-style-type:none; padding:0; margin:0; font-family:arial, sans-serif;}
+
+/* Set up the top level list items and float left to place inline */
+.menu li.top {display:block; float:left; position:relative;}
+
+/* Style and position the table so it takes no part in the menu function. The font size is necessary for IE5.5 */
+.menu table {border-collapse:collapse; width:0; height:0; position:absolute; top:0; left:0;}
+
+/* Default top link link styling */
+.menu li.top a.top_link {display:block; float:left; height:35px;}
+.menu li.top a span {position:absolute; left:-9999px; top:0; z-index:0; font-size:10px;} /* move the link text off screen */
+
+/* pre-load the hover images into the lists */
+.menu li.p1 {width:128px; background:url("../../../menu/pic/home_1.gif") no-repeat;;}
+.menu li.p2 {width:128px; background:url("../../../menu/pic/wzd_c_1.gif") no-repeat;;}
+.menu li.p3 {width:128px; background:url("../../../menu/pic/zoo_c_1.gif") no-repeat;;}
+.menu li.p4 {width:148px; background:url("../../../menu/pic/prop_c_1.gif") no-repeat;;}
+.menu li.p5 {width:128px; background:url("../../../menu/pic/wzd_e_1.gif") no-repeat;;}
+.menu li.p6 {width:128px; background:url("../../../menu/pic/zoo_e_1.gif") no-repeat;;}
+.menu li.p7 {width:148px; background:url("../../../menu/pic/prop_e_1.gif") no-repeat;;}
+.menu li.p8 {width:128px; background:url("../../../menu/pic/mix_1.gif") no-repeat;;}
+
+/* set up the normal unhovered images in the links */
+.menu li a#home {width:128px; background:url("../../../menu/pic/home_0.gif") no-repeat;}
+.menu li a#wzd_cz {width:128px; background:url("../../../menu/pic/wzd_c_0.gif") no-repeat;}
+.menu li a#zoo_cz {width:128px; background:url("../../../menu/pic/zoo_c_0.gif") no-repeat;}
+.menu li a#prop_cz {width:148px; background:url("../../../menu/pic/prop_c_0.gif") no-repeat;}
+.menu li a#wzd_eng {width:128px; background:url("../../../menu/pic/wzd_e_0.gif") no-repeat;}
+.menu li a#zoo_eng {width:128px; background:url("../../../menu/pic/zoo_e_0.gif") no-repeat;}
+.menu li a#prop_eng {width:148px; background:url("../../../menu/pic/prop_e_0.gif") no-repeat;}
+.menu li a#mix {width:128px; background:url("../../../menu/pic/mix_0.gif") no-repeat;}
+
+/* Style the list OR link hover. Depends on which browser is used */
+.menu a:hover {visibility:visible;} /* for IE6 */
+.menu li:hover { position:relative; z-index:200;} /* for IE7 */
+
+/* make the links transparent on hover so that the hover images in the lists show through (no flicker) */
+.menu li a#home:hover, .menu li:hover a#home,
+.menu li a#wzd_cz:hover, .menu li:hover a#wzd_cz,
+.menu li a#zoo_cz:hover, .menu li:hover a#zoo_cz,
+.menu li a#prop_cz:hover, .menu li:hover a#prop_cz,
+.menu li a#wzd_eng:hover, .menu li:hover a#wzd_eng,
+.menu li a#zoo_eng:hover, .menu li:hover a#zoo_eng,
+.menu li a#prop_eng:hover, .menu li:hover a#prop_eng,
+.menu li a#mix:hover, .menu li:hover a#mix {background:transparent;}
+
+/* keep the 'next' level invisible by placing it off screen. */
+.menu ul, 
+.menu :hover ul ul, 
+.menu :hover ul :hover ul ul,
+.menu :hover ul :hover ul :hover ul ul,
+.menu :hover ul :hover ul :hover ul :hover ul ul {position:absolute; left:-9999px; top:-9999px; width:0; height:0;}
+
+/* set up the first drop down sub level */
+.menu :hover ul.sub {left:0; top:35px; background: #fff; padding:3px 0; border:1px solid #888; white-space:nowrap; width:125px; height:auto;}
+.menu :hover ul.sub li {display:block; height:20px; position:relative; float:left; width:122px;}
+.menu :hover ul.sub li a {display:block; font-size:12px; height:20px; width:119px; line-height:20px; text-indent:5px; color:#000; text-decoration:none; border:3px solid #fff; border-width:0 0 0 3px;}
+.menu :hover ul.sub li a.fly {background:#fff url("../../../menu/pic/arrow.gif") 112px 7px no-repeat;}
+.menu :hover ul.sub li a:hover {background:#37a237; color:#fff;}
+.menu :hover ul.sub li a.fly:hover {background:#37a237 url("../../../menu/pic/arrow_over.gif") 112px 7px no-repeat; color:#fff;}
+.menu :hover ul li:hover > a.fly {background:#37a237 url("../../../menu/pic/arrow_over.gif") 112px 7px no-repeat; color:#fff;} 
+
+/* set up the flyout levels when hovering */
+.menu :hover ul :hover ul,
+.menu :hover ul :hover ul :hover ul,
+.menu :hover ul :hover ul :hover ul :hover ul,
+.menu :hover ul :hover ul :hover ul :hover ul :hover ul
+{left:120px; top:-4px; background: #fff; padding:3px 0; border:1px solid #888; white-space:nowrap; width:125px; z-index:200; height:auto; z-index:300;}

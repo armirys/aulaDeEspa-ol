@@ -1,0 +1,70 @@
+#hlavni_tlacitko {position:relative; z-index:50; align:center}
+#hlavni_tlacitko .konec {float:left;}
+
+/* The tlacitko styling */
+/* Remove the padding, margins and bullets from the lists */
+.tlacitko, .tlacitko ul {list-style-type:none; padding:0; margin:0; font-family:arial, sans-serif;}
+
+/* Set up the top level list items and float left to place inline */
+.tlacitko li.top {display:block; float:left; position:relative;}
+
+/* Style and position the table so it takes no part in the tlacitko function. The font size is necessary for IE5.5 */
+.tlacitko table {border-collapse:collapse; width:0; height:0; position:absolute; top:0; left:0;}
+
+/* Default top link link styling */
+.tlacitko li.top.dopredu a.top_link {display:block; float:left; height:22px;}
+.tlacitko li.top a.top_link {display:block; float:left; height:35px;}
+
+
+/* pre-load the hover images into the lists */
+.tlacitko li.fotogalerie {width:35px; background:url("../images/ikony/fotogalerie2.gif") no-repeat;;}
+.tlacitko li.logo {width:35px; background:url("../images/ikony/logotyp2.gif") no-repeat;;}
+.tlacitko li.back {width:35px; background:url("../images/ikony/back2.gif") no-repeat;;}
+.tlacitko li.vpred {width:35px; background:url("../images/ikony/vpred2.gif") no-repeat;;}
+.tlacitko li.dopredu {width:22px; high:22px; background:url("../images/ikony/dopredu2.gif") no-repeat;;}
+.tlacitko li.google {width:35px; background:url("../images/ikony/google2.gif") no-repeat;;}
+.tlacitko li.propgalerie {width:35px; background:url("../images/ikony/propgalerie2.gif") no-repeat;;}
+.tlacitko li.galerie {width:35px; background:url("../images/ikony/galerie2.gif") no-repeat;;}
+.tlacitko li.video {width:35px; background:url("../images/ikony/video2.gif") no-repeat;;}
+
+/* set up the normal unhovered images in the links */
+.tlacitko li a#fotogalerie {width:35px; background:url("../images/ikony/fotogalerie.gif") no-repeat;}
+.tlacitko li a#logo {width:35px; background:url('../images/ikony/logotyp.gif') no-repeat;}
+.tlacitko li a#back {width:35px; background:url("../images/ikony/back.gif") no-repeat;}
+.tlacitko li a#vpred {width:35px; background:url("../images/ikony/vpred.gif") no-repeat;}
+.tlacitko li a#dopredu {width:22px; high:22px; background:url("../images/ikony/dopredu.gif") no-repeat;}
+.tlacitko li a#google {width:35px; background:url("../images/ikony/google.gif") no-repeat;}
+.tlacitko li a#propgalerie {width:35px; background:url("../images/ikony/propgalerie.gif") no-repeat;}
+.tlacitko li a#galerie {width:35px; background:url("../images/ikony/galerie.gif") no-repeat;}
+.tlacitko li a#video {width:35px; background:url('../images/ikony/video.gif') no-repeat;}
+
+/* Style the list OR link hover. Depends on which browser is used */
+.tlacitko a:hover {visibility:visible;} /* for IE6 */
+.tlacitko li:hover { position:relative; z-index:70;} /* for IE7 */
+
+/* make the links transparent on hover so that the hover images in the lists show through (no flicker) */
+.tlacitko li a#fotogalerie:hover, .tlacitko li:hover a#fotogalerie,
+.tlacitko li a#logo:hover, .tlacitko li:hover a#logo,
+.tlacitko li a#back:hover, .tlacitko li:hover a#back,
+.tlacitko li a#vpred:hover, .tlacitko li:hover a#vpred,
+.tlacitko li a#dopredu:hover, .tlacitko li:hover a#dopredu,
+.tlacitko li a#google:hover, .tlacitko li:hover a#google,
+.tlacitko li a#propgalerie:hover, .tlacitko li:hover a#propgalerie,
+.tlacitko li a#galerie:hover, .tlacitko li:hover a#galerie,
+.tlacitko li a#video:hover, .tlacitko li:hover a#video {background:transparent;}
+
+/* keep the 'next' level invisible by placing it off screen. */
+.tlacitko ul, 
+.tlacitko :hover ul ul, 
+.tlacitko :hover ul :hover ul ul,
+.tlacitko :hover ul :hover ul :hover ul ul,
+.tlacitko :hover ul :hover ul :hover ul :hover ul ul {position:absolute; left:-9999px; top:-9999px; width:0; height:0;}
+
+/* set up the flyout levels when hovering */
+.tlacitko :hover ul :hover ul,
+.tlacitko :hover ul :hover ul :hover ul,
+.tlacitko :hover ul :hover ul :hover ul :hover ul,
+.tlacitko :hover ul :hover ul :hover ul :hover ul :hover ul
+{left:120px; top:-4px; background: #fff; padding:3px 0; border:1px solid #888; white-space:nowrap; width:125px; z-index:70; height:auto; z-index:90;}
+
+
